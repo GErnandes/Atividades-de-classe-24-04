@@ -1,0 +1,99 @@
+# %%
+V= [6,7,5,8,9]
+L= V
+V
+print(V==L) #compara conteudo
+print(V is L) #pergunta se V é L, e não compara o conteudo no caso se a lista são iguais
+V[0] =5
+print(V)
+print(L)
+
+# %%
+a= [81,82,83]
+b=a[:] #cria um clone com fatia
+print(a==b)
+print(a is b)
+b[0]= 5
+print(a)
+print(b)
+
+# %%
+uma_lista= ['a','b','c','d','e','f']
+print(uma_lista[1:3]) #ele conta a partir do '1' mas exclui o '3'
+print(uma_lista[:4])  
+print(uma_lista[3:])
+print(uma_lista[:])
+
+# %%
+a=[1,2,3]
+b= a[:]
+b[0]= 5
+print(a[2])
+print(b)
+
+# %%
+minhaLista= [76,92.3,'oi',True,4,76]
+minhaLista[4]= 'pitomba'
+print(minhaLista)
+minhaLista[3]= 'Cibele'
+print(minhaLista)
+minhaLista[0]=99
+print(minhaLista)
+minhaLista[2]
+minhaLista[3] = 0
+print(minhaLista)
+
+# %%
+#Letra B
+minhaLista= [76,92.3,'oi',True,4,76]
+print(minhaLista[:3] + ['Cibele'] + minhaLista[3:])
+
+# %%
+#Letra C
+minhaLista= [76,92.3,'oi',True,4,76]
+print([99] + minhaLista)
+
+# %%
+#letra D
+minhaLista= [76,92.3,'oi',True,4,76]
+if minhaLista[0] == 'oi':
+    print('Oi foi encontrado no índice 0')
+elif minhaLista[1] == 'oi':
+    print('Oi foi encontrado no índice 1')
+elif minhaLista[2] == 'oi':
+    print('Oi foi encontrado no índice 2')
+elif minhaLista[3] == 'oi':
+    print('Oi foi encontrado no índice 3')
+elif minhaLista[4] == 'oi':
+    print('Oi foi encontrado no índice 4')
+elif minhaLista[5] == 'oi':
+    print('Oi foi encontrado no índice 5')
+else:
+    print('Oi não foi encontrado em nenhum índice :)')
+
+# %%
+#letra E
+minhaLista= [76,92.3,'oi',True,4,76]
+novaLista= (minhaLista[:3]+minhaLista[4:])
+novaLista
+
+# %%
+#Letra A
+minhaLista= [76,92.3,'oi',True,4]
+novaLista= ['pitomba',76]
+nossaLista= minhaLista+novaLista
+nossaLista
+
+# %%
+tupla_nova= tuple('Teste')
+tupla_nova
+
+# %%
+tupla_nomes= ('Marlene', 'Zezinho', 'Marlene', 'Cibele', 'Zuely')
+print(tupla_nomes.count('Marlene'))
+print(tupla_nomes.count('Suely'))
+print(tupla_nomes.count('Zezinho'))
+
+# %%
+tupla_numeros= (1,2,2,3,4,4,4,5)
+print(tupla_numeros.count(4))
